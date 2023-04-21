@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="author" content="Mónica Blanco">
+    <meta charset="UTF-8">
+    <title>Controles de Formulario</title>
+</head>
+    <body>
+        <h2>Controles de Formulario</h2>
+
+        <form action="" method="get">
+            <fieldset>
+                <legend>Datos personales</legend>
+            
+                <p>
+                    <label for="nombre">Nombre:</label> 
+                    <input type="text" name="nombre" autofocus id="nombre" maxlength="50" required>
+                </p>
+
+                <p>
+                    
+                    <label for="correo electrónica">Correo electrónico:</label> 
+                    <input type="correo electrónico" name="correo electrónico id="correo electronico" maxlength="50" required>
+                </p>
+
+                <p>
+                    <label for="url">URL:</label> 
+                    <input type="url" name="url" maxlength="50" id="url" placeholder="Escribe la URL de tu página web personal">
+                </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Otros datos</legend>
+                <p>
+                    <label for="poblacion">Población:</label>
+                    <select name="poblacion" id="poblacion">
+                        <option value="Sev">Sevilla</option>
+                        <option value="Ja">Jaen</option>
+                        <option value="Cor">Córdoba</option>
+                        <option value="Huel">Huelva</option>
+                        <option value="Ca">Cádiz</option>
+                        <option value="Mal">Málaga</option>
+                        <option value="Gra">Granada</option>
+                        <option value="Al">Almeria</option>
+
+                    </select> 
+                <p>
+                    <label for="fecha">Fecha:</label> 
+                    <input type="date" name="fecha" id="fecha">
+                </p>
+
+                <p>
+                    <label for="tiempo">Tiempo:</label> 
+                    <input type="time" name="tiempo" id="tiempo">
+                </p>
+
+                <p>
+                 
+                    <label for="fechayhora">Fecha y hora:</label>
+                    <input name="fechayhora" id="fechayhora">
+                </p>
+
+                <p>
+                    <label for="mes">Mes:</label> 
+                    <input type="month" name="mes" id="mes">
+                </p>
+
+                <p>
+                    <label for="semana">Semana:</label> 
+                    <input type="week" name="semana" id="semana">
+                </p>
+
+                <p>
+                    <label for="numero">Número (min -10, max 10):</label> 
+                    <input type="number" name="numero" id="numero" min="-10" max="10" value="0">
+                </p>
+
+                <p>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" name="telefono" pattern="\w{3,16}"  maxlength="11" required id="telefono">
+                </p>
+
+                <p>
+                    <label for="busqueda">Término de búsqueda:</label> 
+                    <input type="search" name="busqueda" id="busqueda">
+                </p>
+
+                <p>
+                    <label for="color">Color favorito:</label> 
+                    <input type="color" name="color" id="color">
+                </p>
+            </fieldset>
+                <fieldset>
+                    <legend>Otros controles</legend>
+                <p>
+                    <p>Aficiones: 
+                        <label for="aficiones-cine">Cine</label>
+                        <input type="checkbox" name="aficiones" value="1" id="aficiones-cine" checked></input>
+                        <label for="aficiones-deporte"></label>Deporte</label>
+                        <input type="checkbox" name="aficiones" value="1" id="aficiones-deporte"></input>
+                      
+                    </p>
+    
+                    <p>Forma de pago: 
+                        <label for="pago-v">Visa</label>
+                        <input type="radio" name="formadepago" value="V" id="pago-v"></input>
+                        <label for="pago-a">American Express</label>
+                        <input type="radio" name="formadepago" value="A" id="pago-a"></input>
+                        <label for="pago-m">Mastercard</label>
+                        <input type="radio" name="formadepago" value="M" id="pago-m"></input>
+                    </p>
+                    </p>
+                </fieldset>
+
+                <input type="submit" value="Enviar">
+                <input type="submit" value="Borrar">
+            </p>
+        </form>
+    </body>
+</html>
